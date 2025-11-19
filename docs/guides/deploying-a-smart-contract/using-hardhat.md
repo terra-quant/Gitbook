@@ -18,7 +18,7 @@ layout:
 
 # Using Hardhat
 
-This section will guide you through deploying an NFT smart contract (ERC-721) on the Slice test network using [Hardhat](https://hardhat.org/).
+This section will guide you through deploying an NFT smart contract (ERC-721) on the Xhavic test network using [Hardhat](https://hardhat.org/).
 
 Hardhat is a developer tool that provides a simple way to deploy, test, and debug smart contracts.
 
@@ -28,11 +28,11 @@ Hardhat is a developer tool that provides a simple way to deploy, test, and debu
 
 By the end of this guide you should be able to do the following:
 
-* Setup Hardhat for Slice
-* Create an NFT smart contract for Slice
-* Compile a smart contract for Slice
-* Deploy a smart contract to Slice
-* Interact with a smart contract deployed on Slice
+* Setup Hardhat for Xhavic
+* Create an NFT smart contract for Xhavic
+* Compile a smart contract for Xhavic
+* Deploy a smart contract to Xhavic
+* Interact with a smart contract deployed on Xhavic
 
 ***
 
@@ -56,16 +56,16 @@ In order to deploy a smart contract, you will first need a web3 wallet. You can 
 
 Deploying contracts to the blockchain requires a gas fee. Therefore, you will need to fund your wallet with ETH to cover those gas fees.
 
-For this guide, you will be deploying a contract to the Slice Goerli test network. You can fund your wallet with Slice Goerli ETH using the following options:
+For this guide, you will be deploying a contract to the Xhavic Goerli test network. You can fund your wallet with Xhavic Goerli ETH using the following options:
 
-* [Slice Faucet](https://slicefaucet.io/)
-* [Slice Bridge](https://sliceledger.io/bridge/deposit/)
+* [Xhavic Faucet](https://xhavicfaucet.io/)
+* [Xhavic  Bridge](using-hardhat.md)
 
 ***
 
 ## Creating a project[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#creating-a-project" id="creating-a-project"></a>
 
-Before you can begin deploying smart contracts to Slice, you need to set up your development environment by creating a Node.js project.
+Before you can begin deploying smart contracts to Xhavic, you need to set up your development environment by creating a Node.js project.
 
 To create a new Node.js project, run:
 
@@ -85,11 +85,11 @@ Select `y` for both adding a `.gitignore` and loading the sample project. It wil
 
 ***
 
-## Configuring Hardhat with Slice[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#configuring-hardhat-with-base" id="configuring-hardhat-with-base"></a>
+## Configuring Hardhat with Xhavic[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#configuring-hardhat-with-base" id="configuring-hardhat-with-base"></a>
 
-In order to deploy smart contracts to the Slice network, you will need to configure your Hardhat project and add the Slice network.
+In order to deploy smart contracts to the Xhavic network, you will need to configure your Hardhat project and add the Xhavic network.
 
-To configure Hardhat to use Slice, add Slice as a network to your project's `hardhat.config.ts` file:
+To configure Hardhat to use Xhavic, add Xhavic as a network to your project's `hardhat.config.ts` file:
 
 ```brightscript
 import { HardhatUserConfig } from 'hardhat/config';
@@ -104,13 +104,13 @@ const config: HardhatUserConfig = {
   networks: {
 
     // for testnet
-    'slice-goerli': {
-      url: 'https://testrpc.sliceledger.io/',
+    'Xhavic-goerli': {
+      url: 'https://testrpc.Xhavicledger.io/',
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
     // for local dev environment
-    'slice-local': {
+    'Xhavic-local': {
       url: 'http://localhost:8545',
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
@@ -203,9 +203,9 @@ To compile the contract using Hardhat, run:
 
 ## Deploying the smart contract[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#deploying-the-smart-contract" id="deploying-the-smart-contract"></a>
 
-Once your contract has been successfully compiled, you can deploy the contract to the Slice Goerli test network.
+Once your contract has been successfully compiled, you can deploy the contract to the Xhavic Goerli test network.
 
-To deploy the contract to the Slice Goerli test network, you'll need to modify the `scripts/deploy.ts` in your project:
+To deploy the contract to the Xhavic Goerli test network, you'll need to modify the `scripts/deploy.ts` in your project:
 
 ```brightscript
 import { ethers } from 'hardhat';
@@ -231,10 +231,10 @@ You'll also need testnet ETH in your wallet. See the [prerequisites ](using-hard
 Finally, run:
 
 ```
-npx hardhat run scripts/deploy.ts --network slice-goerli
+npx hardhat run scripts/deploy.ts --network Xhavic-goerli
 ```
 
-The contract will be deployed on the Slice Goerli test network. You can view the deployment status and contract by using a [block explorer](https://testnet-slicescan.io) and searching for the address returned by your deploy script. If you've deployed an exact copy of the NFT contract above, it will already be verified and you'll be able to read and write to the contract using the web interface.
+The contract will be deployed on the Xhavic Goerli test network. You can view the deployment status and contract by using a [block explorer](https://testnet-xhavicscan.io/) and searching for the address returned by your deploy script. If you've deployed an exact copy of the NFT contract above, it will already be verified and you'll be able to read and write to the contract using the web interface.
 
 {% hint style="info" %}
 INFO
@@ -242,7 +242,7 @@ INFO
 If you'd like to deploy to mainnet, you'll modify the command like so:
 
 ```
-npx hardhat run scripts/deploy.ts --network slice-mainnet
+npx hardhat run scripts/deploy.ts --network Xhavic-mainnet
 ```
 {% endhint %}
 
@@ -252,24 +252,24 @@ Regardless of the network you're deploying to, if you're deploying a new or modi
 
 ## Verifying the Smart Contract[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#verifying-the-smart-contract" id="verifying-the-smart-contract"></a>
 
-If you want to interact with your contract on the block explorer, you, or someone, needs to verify it first. The above contract has already been verified, so you should be able to view your version on a block explorer already. For the remainder of this guide, we'll walk through how to verify your contract on Slice Goerli testnet.
+If you want to interact with your contract on the block explorer, you, or someone, needs to verify it first. The above contract has already been verified, so you should be able to view your version on a block explorer already. For the remainder of this guide, we'll walk through how to verify your contract on Xhavic Goerli testnet.
 
-In `hardhat.config.ts`, configure Slice Goerli as a custom network. Add the following to your `HardhatUserConfig`:
+In `hardhat.config.ts`, configure Xhavic Goerli as a custom network. Add the following to your `HardhatUserConfig`:
 
-* Slicescan
+* Xhavicscan
 
 <pre class="language-brightscript"><code class="lang-brightscript">etherscan: {
    apiKey: {
-    "slice-goerli": "PLACEHOLDER_STRING"
+    "Xhavic-goerli": "PLACEHOLDER_STRING"
    },
    customChains: [
      {
-       network: "slice-goerli",
+       network: "Xhavic-goerli",
        chainId: 8900,
        urls: {
-        apiURL: "https://scan.sliceledger.io/api",
+        apiURL: "https://scan.Xhavicledger.io/api",
         browserURL: "
-<strong>        https://scan.sliceledger.io/"
+<strong>        https://scan.Xhavicledger.io/"
 </strong>       }
      }
    ]
@@ -279,15 +279,15 @@ In `hardhat.config.ts`, configure Slice Goerli as a custom network. Add the foll
 {% hint style="info" %}
 INFO
 
-When verifying a contract with Slicescan on testnet (Goerli), an API key is not required. You can leave the value as `PLACEHOLDER_STRING`.
+When verifying a contract with Xhavicscan on testnet (Goerli), an API key is not required. You can leave the value as `PLACEHOLDER_STRING`.
 {% endhint %}
 
 ```
-npx hardhat verify --network slice-goerli <deployed address>
+npx hardhat verify --network Xhavic-goerli <deployed address>
 ```
 
 ## Interacting with the Smart Contract[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#interacting-with-the-smart-contract" id="interacting-with-the-smart-contract"></a>
 
-If you verified on Slicescan, you can use the `Read Contract` and `Write Contract` tabs to interact with the deployed contract. You'll need to connect your wallet first, by clicking the Connect button.
+If you verified on Xhavicscan, you can use the `Read Contract` and `Write Contract` tabs to interact with the deployed contract. You'll need to connect your wallet first, by clicking the Connect button.
 
 ***

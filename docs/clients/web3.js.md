@@ -2,7 +2,7 @@
 
 [web3.js](https://web3js.readthedocs.io/) is a JavaScript library that allows developers to interact with EVM-compatible blockchain networks.
 
-You can use web3.js to interact with smart contracts deployed on the Slice network.
+You can use web3.js to interact with smart contracts deployed on the Xhavic network.
 
 ***
 
@@ -22,17 +22,17 @@ const Web3 = require('web3');
 
 ## Connecting to Slice[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#connecting-to-base" id="connecting-to-base"></a>
 
-You can connect to Slice by instantiating a new web3.js `Web3` object with a RPC URL of the Slice network:
+You can connect to Xhavic by instantiating a new web3.js `Web3` object with a RPC URL of the Xhavic network:
 
 ```
 const Web3 = require('web3');
 
-const web3 = new Web3('https://testrpc.sliceledger.io/');
+const web3 = new Web3('https://testrpc.Xhavicledger.io/');
 ```
 
 ## Accessing data[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#accessing-data" id="accessing-data"></a>
 
-Once you have created a provider, you can use it to read data from the Slice network.
+Once you have created a provider, you can use it to read data from the Xhavic network.
 
 For example, you can use the `getBlockNumber` method to get the latest block:
 
@@ -45,7 +45,7 @@ async function getLatestBlock(address) {
 
 ## Deploying contracts[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#deploying-contracts" id="deploying-contracts"></a>
 
-Before you can deploy a contract to the Slice network using web3.js, you must first create an account.
+Before you can deploy a contract to the Xhavic network using web3.js, you must first create an account.
 
 You can create an account by using `web3.eth.accounts`:
 
@@ -62,7 +62,7 @@ INFO
 
 ## Interacting with smart contracts[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#interacting-with-smart-contracts" id="interacting-with-smart-contracts"></a>
 
-You can use web3.js to interact with a smart contract on Slice by instantiating a `Contract` object using the ABI and address of a deployed contract:
+You can use web3.js to interact with a smart contract on Xhavic by instantiating a `Contract` object using the ABI and address of a deployed contract:
 
 ```
 const abi = [

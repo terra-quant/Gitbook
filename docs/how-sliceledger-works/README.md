@@ -1,6 +1,6 @@
 ---
 description: >-
-  Slice chain key innovation lies in its use of Optimistic Rollups, a technique
+  Xhavic chain key innovation lies in its use of Optimistic Rollups, a technique
   that enhances scalability in blockchain networks.
 ---
 

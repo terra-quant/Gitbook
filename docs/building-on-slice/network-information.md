@@ -9,4 +9,4 @@
 | RPC Endpoint    | <p>https://localhost:8545<br><em>Rate limited and not for production systems.</em></p> |
 | Chain ID        | 16584                                                                                  |
 | Currency Symbol | XVC                                                                                    |
-| Block Explorer  | [https://scan.sliceledger.io/](https://testnet-slicescan.io/)                          |
+| Block Explorer  | [https://scan.xhavicledger.io/](network-information.md)                                |

@@ -2,7 +2,7 @@
 
 [ethers.js](https://docs.ethers.org/v5/) is a JavaScript library that allows developers to interact with EVM-compatible blockchain networks.
 
-You can use ethers.js to interact with smart contracts deployed on the Slice network.
+You can use ethers.js to interact with smart contracts deployed on the Xhavic network.
 
 ***
 
@@ -31,13 +31,13 @@ You can connect to Xhavic by instantiating a new ethers.js `JsonRpcProvider` obj
 ```css
 const ethers = require('ethers');
 
-const url = 'https://testrpc.sliceledger.io/';
+const url = 'https://testrpc.Xhavicledger.io/';
 const provider = new ethers.providers.JsonRpcProvider(url);
 ```
 
 ## Reading data from the blockchain[​](https://docs.base.org/tools/ethers#reading-data-from-the-blockchain) <a href="#reading-data-from-the-blockchain" id="reading-data-from-the-blockchain"></a>
 
-Once you have created a provider, you can use it to read data from the Slice network.
+Once you have created a provider, you can use it to read data from the Xhavic network.
 
 For example, you can use the `getBlockNumber` method to get the latest block:
 
@@ -67,7 +67,7 @@ INFO
 
 ## Interacting with smart contracts[​](https://docs.base.org/tools/ethers#interacting-with-smart-contracts) <a href="#interacting-with-smart-contracts" id="interacting-with-smart-contracts"></a>
 
-You can use ethers.js to interact with a smart contract on Slice by instantiating a `Contract` object using the ABI and address of a deployed contract:
+You can use ethers.js to interact with a smart contract on Xhavic by instantiating a `Contract` object using the ABI and address of a deployed contract:
 
 ```css
 const abi = [

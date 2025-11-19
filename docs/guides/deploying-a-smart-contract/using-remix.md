@@ -8,15 +8,15 @@ description: Deploying a Smart Contract using Remix
 
 Remix contains a simulation of a blockchain that you can use to rapidly deploy and test your contracts. This simulation only exists within your browser, so you can't share it with others or use external tools or a front end to interact with it. However, you can also deploy to a variety of testnets from within Remix. Doing so will allow you to share your contract with others, at the cost of making it public.
 
-In this article, we'll give you an overview of Remix, and show you how to deploy a contract to **Slice Goerli** testnet.
+In this article, we'll give you an overview of Remix, and show you how to deploy a contract to Xhavic **Goerli** testnet.
 
 {% hint style="info" %}
 INFO
 
-For production / mainnet deployments the steps below in this guide will be almost identical, however, you'll want to ensure that you've selected `Slice`(mainnet) as the network rather than `Slice Goerli` (testnet).
+For production / mainnet deployments the steps below in this guide will be almost identical, however, you'll want to ensure that you've selected Xhavic (mainnet) as the network rather than Xhavic `Goerli` (testnet).
 {% endhint %}
 
-If you're already familiar with Remix, you probably want to jump down to [here](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md).
+If you're already familiar with Remix, you probably want to jump down to [here](https://github.com/Xhavicchain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md).
 
 ***
 
@@ -26,7 +26,7 @@ By the end of this lesson you should be able to:
 
 * List the features, pros, and cons of using Remix as an IDE
 * Deploy and test the Storage.sol demo contract in Remix
-* Use Remix to deploy a contract to the Slice @ Goerli testnet and interact with it in Etherscan
+* Use Remix to deploy a contract to the Xhavic @ Goerli testnet and interact with it in Etherscan
 
 ***
 
@@ -100,12 +100,12 @@ First, add the [Metamask](https://metamask.io/) wallet to your browser, and [set
 
 Once you've completed wallet setup, enable developer settings and turn on testnets ([Metamask Settings](https://support.metamask.io/hc/en-us/articles/13946422437147-How-to-view-testnets-in-MetaMask).
 
-### Add the Slice Goerli Network to your Wallet[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#add-the-base-goerli-network-to-your-wallet" id="add-the-base-goerli-network-to-your-wallet"></a>
+### Add the Xhavic Goerli Network to your Wallet[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#add-the-base-goerli-network-to-your-wallet" id="add-the-base-goerli-network-to-your-wallet"></a>
 
-For this guide, you will be deploying a contract to the Slice Goerli test network. You can fund your wallet with Slice Goerli ETH using the following options:
+For this guide, you will be deploying a contract to the Xhavic Goerli test network. You can fund your wallet with Xhavic Goerli ETH using the following options:
 
-* [Slice Faucet](https://slicefaucet.io/)
-* [Slice Bridge](https://sliceledger.io/bridge/deposit/)
+* [Xhavic Faucet](https://xhavicfaucet.io/)
+* [Xhavic Bridge](https://xhavicledger.io/bridge/deposit/)
 
 ***
 
@@ -125,7 +125,7 @@ Once you are connected, you'll see the name of the network below the _Environmen
 
 ![](<../../.gitbook/assets/image (8).png>)
 
-For Slice Goerli, you should see `Custom (8900) network.`
+For Xhavic Goerli, you should see `Custom (8900) network.`
 
 If you don't see the correct network, change the active network in your wallet.
 
@@ -135,7 +135,7 @@ Click the orange _Deploy_ button. Because it costs gas to deploy a contract, you
 
 ![](<../../.gitbook/assets/image (9).png>)
 
-After you click the _Confirm_ button, return to Remix and wait for the transaction to deploy. Copy its address and navigate to [testnet-slicescan.io](https://testnet-slicescan.io/). **Note:** If you deployed to mainnet, you'll navigate to [slicescan.io](https://slicescan.io) instead.
+After you click the _Confirm_ button, return to Remix and wait for the transaction to deploy. Copy its address and navigate to [testnet-Xhavicscan.io](https://testnet-xhavicscan.io/). **Note:** If you deployed to mainnet, you'll navigate to [Xhavicscan.io](https://xhavicscan.io/) instead.
 
 ### Verify the Contract[​](https://github.com/slicechain/Gitbook/blob/main/docs/guides/deploying-a-smart-contract/broken-reference/README.md) <a href="#verify-the-contract" id="verify-the-contract"></a>
 

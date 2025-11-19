@@ -6,7 +6,7 @@ The [Xhavic Bridge](https://sliceledger.io/bridge/deposit/) for testnet allows y
 
 To bridge to or from Xhavic Goerli:
 
-1. Visit [Xhavic Bridge](https://sliceledger.io/bridge/deposit/)
+1. Visit [Xhavic Bridge](https://xhavicledger.io/bridge/deposit/)
 2. Click **Connect wallet**
 3. Connect your wallet
 4. Choose the amount of ETH (or the asset of your choice that's available) you'd like to deposit or withdraw
