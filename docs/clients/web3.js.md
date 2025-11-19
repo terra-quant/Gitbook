@@ -20,7 +20,7 @@ Add the following line of code to the top of your file to import web3.js:
 const Web3 = require('web3');
 ```
 
-## Connecting to Slice[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#connecting-to-base" id="connecting-to-base"></a>
+## Connecting to Xhavic[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#connecting-to-base" id="connecting-to-base"></a>
 
 You can connect to Xhavic by instantiating a new web3.js `Web3` object with a RPC URL of the Xhavic network:
 

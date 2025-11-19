@@ -18,7 +18,7 @@ If a transaction is sent to the sequencer node by a user and is found to be legi
 
 The sequencer will then call a smart contract on L1 (deployed by the Optimism team prior to release) after adding a few transactions to the L2 chain and send it the transaction data for all of those L2 transactions as well as the new state roots of the L2 chain after applying each transaction.
 
-The smart contract on L1 will efficiently (using Sliceledger) store the transaction data and state roots in another smart contract created for storage.
+The smart contract on L1 will efficiently (using Xhavicledger) store the transaction data and state roots in another smart contract created for storage.
 
 The verifier nodes will include the transaction in their copy of the L2 chain once the transaction data has been deposited on L1.
 

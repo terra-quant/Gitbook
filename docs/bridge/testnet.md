@@ -2,7 +2,7 @@
 
 ## Xhavic Bridge (Testnet)[​](https://docs.base.org/tools/bridges-testnet#base-bridge-testnet) <a href="#base-bridge-testnet" id="base-bridge-testnet"></a>
 
-The [Xhavic Bridge](https://sliceledger.io/bridge/deposit/) for testnet allows you to bridge ETH from Ethereum Goerli to Xhavic Goerli and vice versa.
+The [Xhavic Bridge](https://xhavicledger.io/bridge/deposit/) for testnet allows you to bridge ETH from Ethereum Goerli to Xhavic Goerli and vice versa.
 
 To bridge to or from Xhavic Goerli:
 
