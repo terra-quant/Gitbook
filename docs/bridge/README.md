@@ -1,35 +1,45 @@
 ---
 description: >-
-  The Xhavic Bridge enables the transfer of supported digital assets between
-  Ethereum and Xhavic. It provides a secure, bidirectional mechanism for moving
-  assets across layers while maintaining compatib
+  The Xhavic Bridge securely enables bidirectional asset transfers between
+  Ethereum and Xhavic with full EVM compatibility.
 ---
 
 # Bridge
 
-#### Supported wallets
+#### Supported assets
 
-Xhavic Bridge supports **Ethereum-compatible wallets**, including **MetaMask**.\
-The same wallet address can be used on both Ethereum and Xhavic.
+The Xhavic Bridge supports ERC-20 tokens that are compatible with the Xhavic Standard Bridge.
 
-***
+Supported assets include:
 
-#### Bridging direction
+* ETH
+* ERC-20 tokens deployed using the OptimismMintableERC20 standard
+* Tokens listed in the official Xhavic Token List
 
-The bridge supports **bidirectional transfers**:
-
-* Ethereum → Xhavic
-* Xhavic → Ethereum
+Only reviewed and approved tokens are enabled by default on the Xhavic Bridge.
 
 ***
 
-#### Transfer times
+#### Bridge architecture
 
-* **Ethereum → Xhavic:**\
-  Transfers are typically completed within a few minutes, though timing is not guaranteed and depends on Ethereum network conditions.
+Xhavic Bridge is built on the OP Stack Standard Bridge architecture.
+
+This design uses:
+
+* Canonical L1 and L2 bridge contracts
+* Mint and burn mechanics for ERC-20 representations
+* A fraud-proof-based withdrawal system
+
+This ensures compatibility with Optimism tooling and long-term support across the Superchain ecosystem.
+
+***
+
+#### Transfers are typically completed within a few minutes
+
+* **Ethereum → Xhavic** \
+  Deposits are typically completed within a few minutes, though finality is not guaranteed and depends on Ethereum network conditions.<br>
 * **Xhavic → Ethereum:**\
-  Withdrawals require an approximately **7-day challenge period**.\
-  This delay is a security feature of the OP Stack design and helps protect the network from fraudulent withdrawals.
+  Withdrawals require two transactions — one to initiate the withdrawal on Xhavic and one to finalize it on Ethereum after the challenge period.
 
 Developers and users who require faster withdrawals may choose to use **third-party bridges**, which provide shorter finality times at their own risk.
 
@@ -37,14 +47,11 @@ Developers and users who require faster withdrawals may choose to use **third-pa
 
 #### Withdrawing assets from Xhavic
 
-To withdraw assets from Xhavic back to Ethereum:
+Limitations
 
-1. Connect an Ethereum-compatible wallet and switch to the **Xhavic network**
-2. Select the asset to withdraw and submit a withdrawal transaction
-3. After the withdrawal is proposed on-chain, wait for the challenge period
-4. Finalize the withdrawal to receive funds on Ethereum
-
-Withdrawal progress can be monitored in the **Transactions** section of the bridge interface.
+* Withdrawals from Xhavic to Ethereum are not instant due to the challenge period
+* Third-party bridges may introduce additional trust assumptions
+* Users are responsible for verifying official bridge URLs and contracts
 
 ***
 
