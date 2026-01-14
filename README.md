@@ -1,17 +1,22 @@
+---
+description: >-
+  Xhavic is a secure, low-cost, builder-friendly Ethereum L2 built to bring the
+  next billion users onchain.
+---
+
 # About XHAVIC
 
-Xhavic is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.
+\
+Xhavic is incubated within Xhavic and plans to progressively decentralize in the years ahead through open governance, permissionless participation, and community-led upgrades. We believe that decentralization is critical to creating an open, global cryptoeconomy that is accessible, transparent, and resilient for everyone.
 
-Xhavic is incubated within Xhavic and plans to progressively decentralize in the years ahead. We believe that decentralization is critical to creating an open, global cryptoeconomy that is accessible to everyone.
+#### Ethereum L2
 
-### Ethereum L2 <a href="#ethereum-l2" id="ethereum-l2"></a>
+Xhavic is built as an Ethereum L2, inheriting Ethereum’s security while delivering high throughput and low latency. It provides the security, stability, and scalability required to power production-grade dApps. Developers can confidently deploy any EVM-compatible codebase and seamlessly onramp users and assets from Ethereum L1, Xhavic, and other interoperable EVM chains using standard tooling.
 
-Xhavic is built as an Ethereum L2, with the security, stability, and scalability you need to power your dApps. Confidently deploy any EVM codebase and onramp your users and assets from Ethereum L1, Xhavic, and other interoperable chains.
+#### Big features, small fees
 
-### Big features, small fees <a href="#big-features-small-fees" id="big-features-small-fees"></a>
+Xhavic delivers a full EVM environment at a fraction of the cost of Ethereum L1. Developers get early access to next-generation Ethereum features such as Account Abstraction (ERC-4337), gasless and sponsored transactions, smart contract wallets, and simplified developer APIs-enabling better UX without compromising security.
 
-Get the EVM environment at a fraction of the cost. Get early access to Ethereum features like Account Abstraction (ERC4337), simple developer APIs for gasless transactions, and smart contract wallets.
+#### Open source
 
-### Open source <a href="#open-source" id="open-source"></a>
-
-Xhavic is built on the MIT-licensed [OP Stack](https://stack.optimism.io/), in collaboration with Optimism. We’re joining as the second Core Dev team working on the OP Stack to ensure it’s a public good available to everyone.
+Xhavic is built on the MIT-licensed OP Stack, in collaboration with Optimism. As a Core Dev team contributing to the OP Stack, Xhavic helps ensure the stack remains a public good-open, modular, and available to everyone. All core infrastructure, tooling, and protocol upgrades are developed in the open to support long-term ecosystem growth.

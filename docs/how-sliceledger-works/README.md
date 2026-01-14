@@ -10,7 +10,7 @@ description: >-
 
 This system depends on two different kinds of transactions: L2 transactions, which take place between two addresses on the L2 chain, and cross chain transactions, which happen between the L1 and L2 chains. The L2 transaction process is explained in a little more detail in the workflow that follows than in the basic workflow.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## L2 Transaction Workflow
 
@@ -34,7 +34,7 @@ L1-> L2 Transactions
 
 The sequencer simply relays the message to the L2 chain in transactions from L1 to L2, which are quite quick. Users will provide the necessary information for their transactions to a bridge smart contract on Layer 1 (L1), and this smart contract will add the transaction to a queue of transactions that the sequencer must add to Layer 2 within a predetermined amount of time. Therefore, the transaction will finally be transmitted to the L2 chain by the sequencer.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For example, if a user wants to send 10 ETH to their address on L2 so that they can interact with smart contracts on L2, the following steps will happen:
 
@@ -49,7 +49,7 @@ For example, if a user wants to send 10 ETH to their address on L2 so that they 
 
 Because the L1 chain frequently needs to confirm the validity of the L2 state root following the transaction (which began on L2), transactions from L2 to L1 can be more challenging. In most cases, the user will transmit the transaction to a particular L2 smart contract. Relayer will then read it and transmit it to L1. A JavaScript service that serves as the relayer has been made available by optimism. It communicates with L2 by means of the sequencer and verifier nodes.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 As an illustration of an L2 to L1 transaction, consider what would take place if a user wanted to convert their 15 WETH on L2 address back to ETH on their L1 address.
 
@@ -69,6 +69,6 @@ Since each transaction's transaction data and resultant state root must be saved
 * The smart contract then generates a merkle tree using the hashes of the calldata for each transaction.
 * The merkle root of this batch is sent to a smart contract designed for storage by the CanonicalTransactionChain.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 In essence, this procedure involves adding up several transactions, building a Merkle tree, and storing the root. The same procedure also applies to storing state roots. The StateCommitmentChain is the name of the contract that is used to roll up state roots. The insertion of a new merkle root to the storage contract is currently the only modification to the L1 state for a sequence of L2 transactions. As opposed to keeping each transaction independently in the storage contract, this greatly improves the system's efficiency. This procedure is shown in the above diagram.

@@ -38,7 +38,7 @@ Begin by opening a browser window and navigating to \[remix.ethereum.org]. Click
 
 The editor pane loads with the Remix home screen, which contains news, helpful links, and warnings about common scams. You can close the home tab if you'd like, then open `1_Storage.sol`, located inside the `contracts` folder of the `default_workspace`.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 You'll edit your code in the editor pane. It also has most of the features you're expecting, such as syntax and error highlighting. Note that in Remix, errors are not underlines. Instead, you'll see an❗to the left of the line number where the error is present.
 
@@ -48,7 +48,7 @@ At the top, you'll see a big green arrow similar to the _Run_ button in other ed
 
 Below the editor pane, you'll find the terminal.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 You'll primarily use this panel to observe transaction logs from your smart contracts. It's also one way to access Remix's powerful debugging tools.
 
@@ -117,13 +117,13 @@ Once you have testnet Ether, you can deploy the `Storage` contract!
 
 Open the _Deploy & Run Transactions_ tab. Under _Environment_, select _Injected Provider_. It will list _Metamask_, or any other wallet you have activated here.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7).png>)
 
 The first time you do this, your wallet will ask you to confirm that you want to connect this dApp (Remix) to your wallet.
 
 Once you are connected, you'll see the name of the network below the _Environment_ dropdown.
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8).png>)
 
 For Xhavic Goerli, you should see `Custom (8900) network.`
 
@@ -133,7 +133,7 @@ If you don't see the correct network, change the active network in your wallet.
 
 Click the orange _Deploy_ button. Because it costs gas to deploy a contract, you'll be asked to review and confirm a transaction.
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9).png>)
 
 After you click the _Confirm_ button, return to Remix and wait for the transaction to deploy. Copy its address and navigate to [testnet-Xhavicscan.io](https://testnet-xhavicscan.io/). **Note:** If you deployed to mainnet, you'll navigate to [Xhavicscan.io](https://xhavicscan.io/) instead.
 
@@ -145,7 +145,7 @@ On this page, you can review the balance, information about, and all the transac
 
 Click the _Contract_ tab in the main panel. If you've deployed a unique contract, at the top is a message asking you to _Verify and Publish_ your contract source code.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Verifying your contract maps the names of your functions and variables to the compiled byte code, which makes it possible to interact with the contract using a human-readable interface.
 
