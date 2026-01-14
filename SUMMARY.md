@@ -28,3 +28,4 @@
   * [Deploying a Smart Contract](docs/guides/deploying-a-smart-contract/README.md)
     * [Using Hardhat](docs/guides/deploying-a-smart-contract/using-hardhat.md)
     * [Using Remix](docs/guides/deploying-a-smart-contract/using-remix.md)
+* [Chainlink Oracles on Xhavic](chainlink-oracles-on-xhavic.md)
