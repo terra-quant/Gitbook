@@ -1,20 +1,39 @@
 # Differences between Ethereum and Xhavic
 
-Xhavic is built on the [Bedrock](https://stack.optimism.io/docs/releases/bedrock/explainer/) release of the [OP Stack](https://stack.optimism.io/), which is designed from the ground up to be as close to Ethereum as possible. Because of this, there are very little differences when it comes to building on Xhavic and Ethereum.
+Xhavic is built on the **Bedrock release of the OP Stack**, which is designed to closely match Ethereum’s execution environment. As a result, most Ethereum-based tooling, contracts, and development workflows work on Xhavic with little or no modification.
 
-However, there are still some minor discrepancies between the behavior of Xhavic and Ethereum that you should be aware of when building apps on top of Xhavic.
+However, there are a few **important differences** between Ethereum and Xhavic that developers should be aware of when building and deploying applications.
 
-These minor differences include:
+***
 
-* [Opcodes](https://stack.optimism.io/docs/releases/bedrock/differences/#opcode-differences)
-* [Blocks](https://stack.optimism.io/docs/releases/bedrock/differences/#blocks)
-* [Network specifications](https://stack.optimism.io/docs/releases/bedrock/differences/#network-specifications)
-* [Transaction costs](https://stack.optimism.io/docs/releases/bedrock/differences/#transaction-costs)
+#### Key differences
 
-{% hint style="info" %}
-INFO
+The primary differences between Ethereum and Xhavic include:
 
-Aside from the above, Xhavic Mainnet and Testnet do not yet support the new [`PUSH0`](https://eips.ethereum.org/EIPS/eip-3855) opcode introduced in Shanghai, which is the default target for the Solidity compiler if you use version `0.8.20` or later.
+* **Opcodes**
+* **Block production and timing**
+* **Network specifications**
+* **Transaction costs and fee mechanics**
 
-We recommend using `0.8.19` or lower until this is upgraded.
-{% endhint %}
+Each of these differences may affect low-level behavior, gas estimation, or assumptions made by advanced smart contracts and tooling.
+
+***
+
+#### Opcode support
+
+> **Important**
+
+Xhavic Mainnet and Testnet do **not currently support the `PUSH0` opcode** introduced with the Ethereum Shanghai upgrade.
+
+Because `PUSH0` is the default compilation target for **Solidity v0.8.20 and later**, developers should use **Solidity v0.8.19 or lower** when deploying contracts to Xhavic until this opcode is fully supported.
+
+Failing to do so may result in deployment or execution errors.
+
+***
+
+#### Summary
+
+* Xhavic aims to be **Ethereum-equivalent**, but is not yet **Ethereum-identical**
+* Most applications will work without changes
+* Low-level or highly optimized contracts should account for the documented differences
+* Compiler version selection is important until full opcode parity is achieved
