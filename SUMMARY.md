@@ -15,7 +15,7 @@
   * [ethers.js](docs/clients/ethers.js.md)
   * [web3.js](docs/clients/web3.js.md)
 * [How XHAVIC Works](docs/how-sliceledger-works/README.md)
-  * [Fault Proof VM](docs/how-sliceledger-works/fault-proof-vm.md)
+  * [Fault Proof Virtual Machine](docs/how-sliceledger-works/fault-proof-vm.md)
   * [Fraud Proof](docs/how-sliceledger-works/fraud-proof.md)
   * [Fault Proof Program](docs/how-sliceledger-works/fault-proof-program/README.md)
     * [Epilogue](docs/how-sliceledger-works/fault-proof-program/epilogue.md)
