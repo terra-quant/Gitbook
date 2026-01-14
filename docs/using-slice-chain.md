@@ -23,7 +23,7 @@ To add Xhavic as a custom network to MetaMask:
 
     | Name            | Value                                                 |
     | --------------- | ----------------------------------------------------- |
-    | Network Name    | Xhavic TESTNET                                        |
+    | Network Name    | Xhavic Test Network                                   |
     | Description     | The public testnet for Xhavic.                        |
     | RPC Endpoint    | [https](using-slice-chain.md)://testrpc.xhaviscan.com |
     | Chain ID        | 16585                                                 |
