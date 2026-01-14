@@ -4,15 +4,17 @@ description: >-
   contracts, bridges, and dApp integrations on Xhavic without using real assets.
 ---
 
-# Testnet
+# Xhavic Testnet
 
-### Xhavic Bridge (Testnet)
+### Xhavic Bridge (Testnet)&#x20;
 
 The **Xhavic Testnet Bridge** allows developers to transfer ETH between **Ethereum** and **Xhavic**.\
 This bridge is intended for testing purposes only and supports bidirectional ETH transfers.\
-<br>
+\
+Bridging ETH to and from Xhavic\
+To bridge ETH between Ethereum and Xhavic
 
-### Bridging ETH to and from Xhavic
+### Visit the Xhavic Testnet Bridge interface
 
 To bridge ETH between Ethereum and Xhavic:
 

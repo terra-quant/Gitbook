@@ -5,7 +5,7 @@
 * [Tokens on Xhavic](docs/tokens.md)
 * [Using XHAVIC](docs/using-slice-chain.md)
 * [Bridge](docs/bridge/README.md)
-  * [Testnet](docs/bridge/testnet.md)
+  * [Xhavic Testnet](docs/bridge/testnet.md)
 * [building-on-Xhavic](building-on-slice/README.md)
   * [Differences between Ethereum and Xhavic](docs/building-on-slice/differences-between-ethereum-and-slice.md)
   * [Fees on Xhavic](docs/building-on-slice/fees.md)
