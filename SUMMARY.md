@@ -21,6 +21,7 @@
     * [Epilogue](docs/how-sliceledger-works/fault-proof-program/epilogue.md)
     * [Main Content](docs/how-sliceledger-works/fault-proof-program/main-content.md)
     * [Prologue](docs/how-sliceledger-works/fault-proof-program/prologue.md)
+* [Chainlink Oracles on Xhavic](chainlink-oracles-on-xhavic.md)
 * [tools](tools/README.md)
   * [Block Explorer](docs/tools/block-explorer.md)
   * [Network Faucets](docs/tools/network-faucets.md)
@@ -28,4 +29,3 @@
   * [Deploying a Smart Contract](docs/guides/deploying-a-smart-contract/README.md)
     * [Using Hardhat](docs/guides/deploying-a-smart-contract/using-hardhat.md)
     * [Using Remix](docs/guides/deploying-a-smart-contract/using-remix.md)
-* [Chainlink Oracles on Xhavic](chainlink-oracles-on-xhavic.md)
