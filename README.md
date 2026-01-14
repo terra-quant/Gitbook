@@ -1,7 +1,7 @@
 ---
 description: >-
-  Xhavic is a secure, low-cost, builder-friendly Ethereum L2 built to bring the
-  next billion users onchain.
+  Xhavic is a secure, low-cost, and builder-friendly Ethereum Layer 2 designed
+  to onboard the next billion users onchain.
 ---
 
 # About XHAVIC
