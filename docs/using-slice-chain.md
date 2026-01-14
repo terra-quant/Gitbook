@@ -1,7 +1,7 @@
 ---
 description: >-
   XHAVIC can be added to MetaMask as a custom network, enabling developers and
-  users to interact with Xhavic Mainnet through standard Ethereum-compatible
+  users to interact with Xhavic Testnet through standard Ethereum-compatible
   wallets.
 ---
 
@@ -11,9 +11,9 @@ description: >-
 
 ### MetaMask Wallet <a href="#other-wallets" id="other-wallets"></a>
 
-Xhavic can be added as a custom network to any EVM-compatible wallet (i.e. [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn), Coinbase).
+Xhavic can be added as a custom network to any EVM-compatible wallet (i.e. [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn), Coinbase wallets).
 
-To add Xhavic as a custom network to MetaMask:
+&#x20; Adding Xhavic as a custom network to MetaMask Wallet:
 
 1. Open the MetaMask browser extension.
 2. Open the network selection dropdown menu by clicking the dropdown button at the top of the extension.
