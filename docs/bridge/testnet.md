@@ -1,31 +1,49 @@
+---
+description: >-
+  The Xhavic testnet provides a safe environment for developers to test
+  contracts, bridges, and dApp integrations on Xhavic without using real assets.
+---
+
 # Testnet
 
-## Xhavic Bridge (Testnet)[​](https://docs.base.org/tools/bridges-testnet#base-bridge-testnet) <a href="#base-bridge-testnet" id="base-bridge-testnet"></a>
+### Xhavic Bridge (Testnet)
 
-The [Xhavic Bridge](https://xhavicledger.io/bridge/deposit/) for testnet allows you to bridge ETH from Ethereum Goerli to Xhavic Goerli and vice versa.
+The **Xhavic Testnet Bridge** allows developers to transfer ETH between **Ethereum** and **Xhavic**.\
+This bridge is intended for testing purposes only and supports bidirectional ETH transfers.\
+<br>
 
-To bridge to or from Xhavic Goerli:
+### Bridging ETH to and from Xhavic
 
-1. Visit [Xhavic Bridge](https://xhavicledger.io/bridge/deposit/)
-2. Click **Connect wallet**
-3. Connect your wallet
-4. Choose the amount of ETH (or the asset of your choice that's available) you'd like to deposit or withdraw
+To bridge ETH between Ethereum and Xhavic:
+
+1. Visit the **Xhavic Bridge**
+2. Click **Connect Wallet**
+3. Connect an Ethereum-compatible wallet (e.g., MetaMask)
+4. Select the amount of ETH (or any supported testnet asset) to deposit or withdraw
+5. Confirm the transaction in your wallet
 
 ## Portal Proxy Contract[​](https://docs.base.org/tools/bridges-testnet#portal-proxy-contract) <a href="#portal-proxy-contract" id="portal-proxy-contract"></a>
 
-You can bridge ETH from Ethereum Goerli to Xhavic Goerli by sending Goerli ETH to the following contract address:
+You can bridge ETH from Ethereum to Xhavic by sending ETH to the following contract address:
 
-[0xE1BD4bc68917a3e6F266d5ae77C3f8994f28E825](https://goerli.etherscan.io/address/0xe1bd4bc68917a3e6f266d5ae77c3f8994f28e825)
+0x9efd6ea3d18dee98698150c7df369fcd2efea3be
 
-{% hint style="info" %}
-INFO
+### Important behavior (ETH deposits)
 
-By default, bridging ETH will result in a `SELF` transaction on the L2, with the `from` and `to` addresses equal to the address performing the bridge on the L1. This will also increase that address' L2 nonce. **If you are bridging for the purpose of a deterministic contract deploy that depends on a zero nonce, please bridge using a different address first, and transfer to the contract deployment address on the L2 after bridging.**
-{% endhint %}
+By default, bridging ETH will result in a **SELF transaction on Xhavic (L2)**, where:
 
-{% hint style="warning" %}
-CAUTION
+* The sender and recipient addresses on L2 are the same as the sender address on L1
+* The L2 nonce of that address is incremented
 
-**Do not send any asset other than ETH to the portal proxy contract.** The proxy contract only supports receipt of ETH and sending any other asset will result in unrecoverable loss of the asset.
-{% endhint %}
+If you are bridging ETH for the purpose of a **deterministic contract deployment** that requires a **zero L2 nonce**, you should:
+
+1. Bridge ETH using a different address
+2. Transfer ETH to the deployment address on Xhavic after the bridge completes
+
+***
+
+#### ⚠️ Caution
+
+Do **not** send any asset other than **ETH** to the Portal Proxy Contract.\
+The contract does **not** support ERC-20 or other asset types, and sending unsupported assets will result in **permanent and unrecoverable loss**.
 
