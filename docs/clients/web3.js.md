@@ -27,7 +27,7 @@ You can connect to Xhavic by instantiating a new web3.js `Web3` object with a RP
 ```
 const Web3 = require('web3');
 
-const web3 = new Web3('https://testrpc.Xhavicledger.io/');
+const web3 = new Web3('https://testrpc.Xhavic.io/');
 ```
 
 ## Accessing data[​](https://github.com/slicechain/Gitbook/blob/main/docs/clients/broken-reference/README.md) <a href="#accessing-data" id="accessing-data"></a>

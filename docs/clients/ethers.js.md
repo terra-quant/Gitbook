@@ -31,7 +31,7 @@ You can connect to Xhavic by instantiating a new ethers.js `JsonRpcProvider` obj
 ```css
 const ethers = require('ethers');
 
-const url = 'https://testrpc.Xhavicledger.io/';
+const url = 'https://testrpc.Xhavic.io/';
 const provider = new ethers.providers.JsonRpcProvider(url);
 ```
 
