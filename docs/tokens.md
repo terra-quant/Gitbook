@@ -1,10 +1,10 @@
 ---
 description: >-
-  Bring your ERC-20 tokens to Xhavic Mainnet with seamless bridging, low fees,
-  and full EVM compatibility.
+  Bring your ERC-20 tokens to Xhavic Mainnet using seamless L1–L2 bridging, low
+  fees, and full EVM compatibility.
 ---
 
-# Tokens
+# Tokens on Xhavic
 
 ### Tokens on Xhavic Mainnet
 
@@ -12,6 +12,8 @@ The Xhavic Token List enables developers and token issuers to register ERC-20 to
 This list is used by Xhavic tooling and interfaces (including the Xhavic Bridge) to identify supported tokens.
 
 Xhavic aligns its token listing process with the **Optimism Superchain Token List** to maintain consistency across the OP Stack ecosystem.
+
+The Xhavic Token List acts as a canonical source of truth for supported bridged assets across the Xhavic ecosystem.
 
 ***
 
@@ -21,9 +23,12 @@ The following steps describe the required process to add a token to the Xhavic T
 
 #### Step 1: Deploy an ERC-20 token on Xhavic <a href="#adding-your-token-to-the-list" id="adding-your-token-to-the-list"></a>
 
-Token issuers must deploy an ERC-20 representation of their Ethereum token on Xhavic using a supported bridging framework.
+Token issuers must deploy an ERC-20 token on Xhavic that represents their Ethereum L1 asset using a supported bridging framework.&#x20;
+
+This approach ensures that token supply on Xhavic is always backed by canonical L1 deposits.
 
 For full compatibility, Xhavic recommends using the **Standard Bridge contracts** and deploying via the **OptimismMintableERC20Factory**.\
+\
 This deployment method ensures:
 
 * Compatibility with the Xhavic Bridge
@@ -36,7 +41,8 @@ Tokens deployed using non-standard bridging frameworks **must expose interfaces 
 
 #### Step 2: Submit token metadata
 
-Token metadata must be submitted through the official **GitHub repository** via a **Pull Request (PR)**.
+Token metadata must be submitted through the official **GitHub repository** via a **Pull Request (PR)**.\
+This process ensures transparency, version control, and community review of all listed assets.
 
 The submission must include:
 
@@ -51,7 +57,7 @@ Refer to the **cbETH example PR**, which demonstrates a standard submission usin
 
 #### Step 3: Review and approval
 
-Merging a token into the GitHub repository **does not automatically list** the token on the Xhavic Bridge.
+Merging a token into the GitHub repository **does not automatically list** the token on the Xhavic Bridge and Xhavic reserves the right to delay or reject listings that pose security, legal, or ecosystem risks.
 
 All bridge listings are subject to a **manual review** by the Xhavic team, which includes:
 

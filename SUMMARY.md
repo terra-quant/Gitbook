@@ -2,7 +2,7 @@
 
 * [About XHAVIC](README.md)
 * [Table of contents](docs/SUMMARY.md)
-* [Tokens](docs/tokens.md)
+* [Tokens on Xhavic](docs/tokens.md)
 * [Using XHAVIC](docs/using-slice-chain.md)
 * [Bridge](docs/bridge/README.md)
   * [Testnet](docs/bridge/testnet.md)
