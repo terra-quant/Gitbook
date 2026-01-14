@@ -1,27 +1,64 @@
+---
+description: >-
+  Bring your ERC-20 tokens to Xhavic Mainnet with seamless bridging, low fees,
+  and full EVM compatibility.
+---
+
 # Tokens
 
-## The Xhavic Goerli & Mainnet Token List
+### Tokens on Xhavic Mainnet
 
-This page is intended for token issuers who already have an ERC-20 contract deployed on Ethereum and would like to submit their token for bridging between Ethereum and Xhavic and Xhavic Mainnet to Xhavic Bridge and other bridges. Xhavic uses the [Optimism Superchain token list ](https://github.com/ethereum-optimism/ethereum-optimism.github.io)as a reference for tokens that have been deployed on Xhavic.
+The Xhavic Token List enables developers and token issuers to register ERC-20 tokens that are deployed on Ethereum and bridged to **Xhavic Mainnet**.\
+This list is used by Xhavic tooling and interfaces (including the Xhavic Bridge) to identify supported tokens.
 
-_**Note - Tokens approved in the Github repository are not necessarily listed on the Xhavic Bridge.**_
-
-_**Disclaimer: Xhavic does not endorse any of the tokens that are listed in the Github repository and has conducted only preliminary checks, which includes automated checks listed**_ [_**here**_](https://github.com/ethereum-optimism/ethereum-optimism.github.io)_**.**_
+Xhavic aligns its token listing process with the **Optimism Superchain Token List** to maintain consistency across the OP Stack ecosystem.
 
 ***
 
-### Adding your token to the list[​](https://docs.base.org/tokens/list#adding-your-token-to-the-list) <a href="#adding-your-token-to-the-list" id="adding-your-token-to-the-list"></a>
+### Token listing process
 
-The steps below explain how to get your token on the Xhavic Token List.
+The following steps describe the required process to add a token to the Xhavic Token List.<br>
 
-#### Step 1: Deploy your token on Xhavic[​](https://docs.base.org/tokens/list#step-1-deploy-your-token-on-base) <a href="#step-1-deploy-your-token-on-base" id="step-1-deploy-your-token-on-base"></a>
+#### Step 1: Deploy an ERC-20 token on Xhavic <a href="#adding-your-token-to-the-list" id="adding-your-token-to-the-list"></a>
 
-Select your preferred bridging framework and use it to deploy an ERC-20 for your token on Xhavic. We recommend you use the framework provided by Xhavic’s [standard bridge](https://github.com/ethereum-optimism/optimism/blob/develop/specs/bridges.md#standard-bridges) contracts, and furthermore deploy your token using the [OptimismMintableERC20Factory](https://github.com/ethereum-optimism/optimism/blob/develop/specs/predeploys.md#optimismmintableerc20factory). Deploying your token on Xhavic in this manner provides us with guarantees that will smooth the approval process. If you choose a different bridging framework, its interface must be compatible with that of the standard bridge, otherwise it may be difficult for us to support.
+Token issuers must deploy an ERC-20 representation of their Ethereum token on Xhavic using a supported bridging framework.
 
-#### Step 2: Submit details for your token[​](https://docs.base.org/tokens/list#step-2-submit-details-for-your-token) <a href="#step-2-submit-details-for-your-token" id="step-2-submit-details-for-your-token"></a>
+For full compatibility, Xhavic recommends using the **Standard Bridge contracts** and deploying via the **OptimismMintableERC20Factory**.\
+This deployment method ensures:
 
-Follow the instructions in this repository and submit a PR containing the required details for your token. You must specify in your token’s data.json file a section for ‘Xhavic-goerli’ and/or ‘Xhavic’ . The change you need to submit is particularly simple if your token has already been added to the Optimism token list. For example, [this PR](https://github.com/ethereum-optimism/ethereum-optimism.github.io/commit/27ab9b2d3388f7feba3a152e0a0748c73d732a68) shows the change required for cbETH, which was already on Optimism’s token list and relies on the Xhavic standard bridge.
+* Compatibility with the Xhavic Bridge
+* Standardized mint/burn behavior
+* Easier review and long-term support
 
-#### Step 3: Await final approval[​](https://docs.base.org/tokens/list#step-3-await-final-approval) <a href="#step-3-await-final-approval" id="step-3-await-final-approval"></a>
+Tokens deployed using non-standard bridging frameworks **must expose interfaces compatible with the Standard Bridge**. Tokens that do not meet these requirements may not be supported.
 
-Tokens approved in the Github repository are not necessarily listed on the Xhavic Bridge and are not guaranteed or automatic. Xhavic Bridge reviews are conducted manually by the Xhavic team. For more information, please visit our [Discord](https://discord.gg/9hAWtYXErG).
+***
+
+#### Step 2: Submit token metadata
+
+Token metadata must be submitted through the official **GitHub repository** via a **Pull Request (PR)**.
+
+The submission must include:
+
+* A `data.json` entry for **Xhavic**
+* Correct token addresses for both Ethereum and Xhavic
+* Token decimals, symbol, and name
+
+If the token already exists in the **Optimism Token List**, only minimal changes are required.\
+Refer to the **cbETH example PR**, which demonstrates a standard submission using the Xhavic Standard Bridge.
+
+***
+
+#### Step 3: Review and approval
+
+Merging a token into the GitHub repository **does not automatically list** the token on the Xhavic Bridge.
+
+All bridge listings are subject to a **manual review** by the Xhavic team, which includes:
+
+* Contract validation
+* Bridge compatibility checks
+* Basic security and consistency verification
+
+Only tokens that pass this review are enabled on the Xhavic Bridge.
+
+For review status, questions, or support, developers should use the **Xhavic Discord**.
