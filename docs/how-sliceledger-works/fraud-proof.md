@@ -1,7 +1,5 @@
 # Fraud Proof
 
-## Overview
-
 **A fault proof, also known as fraud proof or interactive game, consists of 3 components:**
 
 1. **Program:** given a commitment to all rollup inputs (L1 data) and the dispute, verify the dispute statelessly.
