@@ -1,13 +1,13 @@
 ---
 description: >-
   Xhavic is a secure, low-cost, and builder-friendly Ethereum Layer 2 designed
-  to onboard the next billion users onchain.
+  to onboard the next billion users on-chain.
 ---
 
 # About XHAVIC
 
 \
-Xhavic is incubated within Xhavic and plans to progressively decentralize in the years ahead through open governance, permissionless participation, and community-led upgrades. We believe that decentralization is critical to creating an open, global cryptoeconomy that is accessible, transparent, and resilient for everyone.
+Xhavic is incubated by its founding team and ecosystem partners and plans to progressively decentralize in the years ahead through open governance, permissionless participation, and community-led upgrades. We believe that decentralization is critical to creating an open, global cryptoeconomy that is accessible, transparent, and resilient for everyone.
 
 #### Ethereum L2
 
@@ -15,8 +15,8 @@ Xhavic is built as an Ethereum L2, inheriting Ethereum’s security while delive
 
 #### Big features, small fees
 
-Xhavic delivers a full EVM environment at a fraction of the cost of Ethereum L1. Developers get early access to next-generation Ethereum features such as Account Abstraction (ERC-4337), gasless and sponsored transactions, smart contract wallets, and simplified developer APIs-enabling better UX without compromising security.
+Xhavic delivers a full EVM environment at a fraction of the cost of Ethereum L1. Developers get early access to next-generation Ethereum features such as Account Abstraction (ERC-4337), gasless and sponsored transactions, smart contract wallets, and simplified developer APIs, enabling better UX without compromising security.
 
 #### Open source
 
-Xhavic is built on the MIT-licensed OP Stack, in collaboration with Optimism. As a Core Dev team contributing to the OP Stack, Xhavic helps ensure the stack remains a public good-open, modular, and available to everyone. All core infrastructure, tooling, and protocol upgrades are developed in the open to support long-term ecosystem growth.
+Xhavic is built on the MIT-licensed OP Stack, in collaboration with Optimism. As a Core Dev team contributing to the OP Stack ecosystem, Xhavic helps ensure the stack remains a public good-open, modular, and available to everyone. All core infrastructure, tooling, and protocol upgrades are developed in the open to support long-term ecosystem growth.
