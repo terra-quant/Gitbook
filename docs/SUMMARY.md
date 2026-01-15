@@ -19,9 +19,9 @@
 
 ## Guides
 
-* [Deploying a Smart Contract](guides/deploying-a-smart-contract/)
-  * [Using Hardhat](guides/deploying-a-smart-contract/using-hardhat.md)
-  * [Using Remix](guides/deploying-a-smart-contract/using-remix.md)
+* [Deploying a Smart Contract](/broken/pages/ZZZwy2EKeAjdCxnNfCkH)
+  * [Using Hardhat](/broken/pages/a1qdRjV7eWZI36AyqhDW)
+  * [Using Remix](/broken/pages/f0Rhq0qNQHvsCCSJUk8k)
 
 ## Tools
 
