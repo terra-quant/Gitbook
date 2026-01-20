@@ -44,7 +44,7 @@ If you are bridging ETH for the purpose of a **deterministic contract deployment
 
 ***
 
-#### ⚠️ Caution
+#### Caution -&#x20;
 
 Do **not** send any asset other than **ETH** to the Portal Proxy Contract.\
 The contract does **not** support ERC-20 or other asset types, and sending unsupported assets will result in **permanent and unrecoverable loss**.
