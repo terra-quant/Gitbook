@@ -1,6 +1,6 @@
 # LitePaper
 
-## Xhavic Litepaper (Testnet Edition)
+## Xhavic Litepaper&#x20;
 
 ### 1. Executive Summary
 
