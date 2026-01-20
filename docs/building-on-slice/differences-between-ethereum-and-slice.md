@@ -1,4 +1,4 @@
-# Differences between Ethereum and Xhavic (Ethereum compatibility notes)
+# Differences between Ethereum and Xhavic
 
 Xhavic is built on the **Bedrock release of the OP Stack**, which is designed to closely match Ethereum’s execution environment. As a result, most Ethereum-based tooling, contracts, and development workflows work on Xhavic with little or no modification.
 
@@ -19,7 +19,7 @@ The following differences are high-level categories. Detailed behavior may vary 
 
 #### Opcode support
 
-⚠️ Important\
+\
 Xhavic Mainnet and Testnet do not currently support the PUSH0 opcode introduced with the Ethereum Shanghai upgrade.
 
 Because PUSH0 is the default compilation target for Solidity v0.8.20 and later, developers must use Solidity v0.8.19 or lower when deploying contracts to Xhavic until this opcode is fully supported.

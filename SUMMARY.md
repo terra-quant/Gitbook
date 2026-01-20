@@ -7,7 +7,7 @@
 * [Bridge](docs/bridge/README.md)
   * [Xhavic Testnet](docs/bridge/testnet.md)
 * [building-on-Xhavic](building-on-slice/README.md)
-  * [Differences between Ethereum and Xhavic (Ethereum compatibility notes)](docs/building-on-slice/differences-between-ethereum-and-slice.md)
+  * [Differences between Ethereum and Xhavic](docs/building-on-slice/differences-between-ethereum-and-slice.md)
   * [Fees on Xhavic](docs/building-on-slice/fees.md)
   * [Network Information](docs/building-on-slice/network-information.md)
   * [XHAVIC Contracts](docs/building-on-slice/slice-contracts.md)
