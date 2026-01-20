@@ -1,6 +1,10 @@
-# XHAVIC Contracts
+---
+description: >-
+  Note - All contract addresses will be updated when moving to mainnet or during
+  the mainnet deployment process. For now, temporary addresses are being used.
+---
 
-**All contract addresses will be updated when moving to mainnet or during the mainnet deployment process. For now, temporary addresses are being used.**
+# XHAVIC Contracts
 
 ### Contract Addresses&#x20;
 
