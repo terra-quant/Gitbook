@@ -2,7 +2,7 @@
 
 ### Xhavic Faucet[​](https://docs.base.org/tools/network-faucets#coinbase-faucet) <a href="#coinbase-faucet" id="coinbase-faucet"></a>
 
-[Xhavic Goerli](https://faucet.xhavicledger.io/) is the easiest way to get ETH for Xhavic Goerli.
+[Xhavic](https://faucet.xhavicledger.io/) is the easiest way to get ETH for Xhavic.
 
 {% hint style="info" %}
 INFO
