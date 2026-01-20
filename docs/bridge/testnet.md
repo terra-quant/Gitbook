@@ -6,7 +6,7 @@ description: >-
 
 # Xhavic Testnet
 
-### Xhavic Bridge (Testnet)&#x20;
+### Xhavic Bridge&#x20;
 
 The **Xhavic Testnet Bridge** allows developers to transfer ETH between **Ethereum** and **Xhavic**.\
 This bridge is intended for testing purposes only and supports bidirectional ETH transfers.\
@@ -30,7 +30,7 @@ You can bridge ETH from Ethereum to Xhavic by sending ETH to the following contr
 
 0x9efd6ea3d18dee98698150c7df369fcd2efea3be
 
-### Important behavior (ETH deposits)
+### Important behavior&#x20;
 
 By default, bridging ETH will result in a **SELF transaction on Xhavic (L2)**, where:
 
