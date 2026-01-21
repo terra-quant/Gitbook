@@ -1,0 +1,29 @@
+---
+description: >-
+  Note - All contract addresses will be updated when moving to mainnet or during
+  the mainnet deployment process. For now, temporary addresses are being used.
+---
+
+# XHAVIC Contracts
+
+### Contract Addresses&#x20;
+
+<table><thead><tr><th width="285">Name</th><th>Address</th></tr></thead><tbody><tr><td>Batch Sender</td><td><a href="https://goerli.etherscan.io/address/0x4501285E8FFE2d38828F1E69FB57a6a2fAAC2620">0x4501285E8FFE2d38828F1E69FB57a6a2fAAC2620</a></td></tr><tr><td>Batch Inbox</td><td><a href="https://goerli.etherscan.io/address/0xf10E52C302cd0dbc40Acc836021E4c9aF967ADa7">0xf10E52C302cd0dbc40Acc836021E4c9aF967ADa7</a></td></tr><tr><td>Output Proposer</td><td><a href="https://goerli.etherscan.io/address/0x1aea424E9502Cc06f0Fc22516466d73A4317CF6b">0x1aea424E9502Cc06f0Fc22516466d73A4317CF6b</a></td></tr></tbody></table>
+
+#### Xhavic Testnet [​](https://github.com/slicechain/Gitbook/blob/main/docs/building-on-slice/broken-reference/README.md) <a href="#base-testnet-goerli" id="base-testnet-goerli"></a>
+
+<table><thead><tr><th width="294">Name</th><th>Address</th></tr></thead><tbody><tr><td>WETH9</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000006">0x4200000000000000000000000000000000000006</a></td></tr><tr><td>L2CrossDomainMessenger</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000007">0x4200000000000000000000000000000000000007</a></td></tr><tr><td>L2StandardBridge</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000010">0x4200000000000000000000000000000000000010</a></td></tr><tr><td>SequencerFeeVault</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000011">0x4200000000000000000000000000000000000011</a></td></tr><tr><td>XhavicMintableERC20Factory</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000012">0x4200000000000000000000000000000000000012</a></td></tr><tr><td>GasPriceOracle</td><td><a href="https://testnet-slicescan.io/address/0x420000000000000000000000000000000000000F">0x420000000000000000000000000000000000000F</a></td></tr><tr><td>L1Block</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000015">0x4200000000000000000000000000000000000015</a></td></tr><tr><td>L2ToL1MessagePasser</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000016">0x4200000000000000000000000000000000000016</a></td></tr><tr><td>L2ERC721Bridge</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000014">0x4200000000000000000000000000000000000014</a></td></tr><tr><td>XhavicMintableERC721Factory</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000017">0x4200000000000000000000000000000000000017</a></td></tr><tr><td>ProxyAdmin</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000018">0x4200000000000000000000000000000000000018</a></td></tr><tr><td>XhavicFeeVault</td><td><a href="https://testnet-slicescan.io/address/0x4200000000000000000000000000000000000019">0x4200000000000000000000000000000000000019</a></td></tr><tr><td>L1FeeVault</td><td><a href="https://testnet-slicescan.io/address/0x420000000000000000000000000000000000001A">0x420000000000000000000000000000000000001a</a></td></tr></tbody></table>
+
+### L1 Contract Addresses[​](https://github.com/slicechain/Gitbook/blob/main/docs/building-on-slice/broken-reference/README.md) <a href="#l1-contract-addresses" id="l1-contract-addresses"></a>
+
+**Unneeded contract addresses**
+
+Certain contracts are mandatory according to the [OP Stack SDK](https://stack.optimism.io/docs/build/sdk/#unneeded-contract-addresses), despite not being utilized. For such contracts, you can simply assign the zero address:
+
+* `StateCommitmentChain`
+* `CanonicalTransactionChain`
+* `BondManager`
+
+#### Ethereum Testnet [​](https://github.com/slicechain/Gitbook/blob/main/docs/building-on-slice/broken-reference/README.md) <a href="#ethereum-testnet-goerli" id="ethereum-testnet-goerli"></a>
+
+<table><thead><tr><th width="296">Name</th><th>Address</th></tr></thead><tbody><tr><td>AddressManager</td><td><a href="https://goerli.etherscan.io/address/0x68a36eB94b2A27E2859DCdcaf9e93737cCee5637">0x68a36eB94b2A27E2859DCdcaf9e93737cCee5637</a></td></tr><tr><td>L1CrossDomainMessenger</td><td><a href="https://goerli.etherscan.io/address/0x1BE07F8525A3C533E5d119438f80271d0D731617">0x1BE07F8525A3C533E5d119438f80271d0D731617</a></td></tr><tr><td>L1ERC721Bridge</td><td><a href="https://goerli.etherscan.io/address/0xAfb89C790Fd21137178C379fFBBE6A9eB82931d4">0xAfb89C790Fd21137178C379fFBBE6A9eB82931d4</a></td></tr><tr><td>L1StandardBridge</td><td><a href="https://goerli.etherscan.io/address/0x9FE674706ECf913eb9B7ddA56cAFdC5b4A8A76F7">0x9FE674706ECf913eb9B7ddA56cAFdC5b4A8A76F7</a></td></tr><tr><td>L2OutputOracle</td><td><a href="https://goerli.etherscan.io/address/0x65A0592403c3521e693f061eBe1bD0aC3dFBDFe6">0x65A0592403c3521e693f061eBe1bD0aC3dFBDFe6</a></td></tr><tr><td>XhavicMintableERC20Factory</td><td><a href="https://goerli.etherscan.io/address/0x3D2e4B7856bb9c8187E4Dc6CDDD476c06338419f">0x3D2e4B7856bb9c8187E4Dc6CDDD476c06338419f</a></td></tr><tr><td>XhavicPortal</td><td><a href="https://goerli.etherscan.io/address/0x00aE05a9Da0AFaE975fBDe241aa548151148b35b">0x00aE05a9Da0AFaE975fBDe241aa548151148b35b</a></td></tr><tr><td>ProxyAdmin</td><td><a href="https://goerli.etherscan.io/address/0x964273Da08Adc32c06b5495712C266d87Ed35c4D">0x964273Da08Adc32c06b5495712C266d87Ed35c4D</a></td></tr><tr><td>SystemConfig</td><td><a href="https://goerli.etherscan.io/address/0x3C874D0c27bEDA2BE91053DEfE3AE79d85e79689">0x3C874D0c27bEDA2BE91053DEfE3AE79d85e79689</a></td></tr></tbody></table>
